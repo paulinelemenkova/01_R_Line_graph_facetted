@@ -70,11 +70,42 @@ plot4 <- ggplot(Lemons, aes(Year, Value, group = 1)) +
          geom_line() +
          labs(x = "Year", y = "Value", title = "Lemons and limes")
 plot4
+# 5 Areca nuts
+Areca <- df[df$Item == "Areca nuts", ]
+head(Areca)
+tail(Areca)
+#
+plot4 <- ggplot(Areca, aes(Year, Value, group = 1)) +
+         geom_point() +
+         geom_line() +
+         labs(x = "Year", y = "Value", title = "Areca nuts")
+plot4
 #
 # Map variables of one column to color
-PolinaTable <- read_csv("FAOSTAT_India_10.csv")
-head(PolinaTable)
-tail(PolinaTable)
-ggplot(data=PolinaTable, aes(x=Year, y=Value, group=Item, colour=Item)) +
+df <- read_csv("FAOSTAT_India_10.csv")
+head(df)
+tail(df)
+ggplot(data=df, aes(x=Year, y=Value, group=Item, colour=Item)) +
     geom_line() +
     geom_point()
+
+df <- read_csv("FAOSTAT_India_10.csv")
+summary(df)
+head(df)
+tail(df)
+str(df)
+ggplot(data=df, aes(x=Year, y=Value, group=Item, colour=Item, group = interaction(Cashew, Cabbages))) +
+    geom_line() +
+    geom_point() +
+    scale_color_brewer(palette = "Set1")
+
+# Boxplots Grouping by 'category' using fill  for box plots and bar plots
+ggplot(df, aes(Item, Value, group = Item, fill = Item)) +
+    geom_boxplot() +
+    scale_color_brewer(palette = "Set1")
+
+# facetted plot
+ggplot(df, aes(Year, Value, colour=Item)) +
+    geom_point() +
+    geom_line() +
+    facet_wrap(~Item, scales = "free")
