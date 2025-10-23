@@ -41,14 +41,14 @@ plot1 <- ggplot(Cashew, aes(Year, Value, group = 1)) +
          labs(x = "Year", y = "Value", title = "Cashew")
 plot1
 # 2 Rice
-Rice <- PolinaTable[PolinaTable$Item == "Rice", ]
+Rice <- df[df$Item == "Rice", ]
 head(Rice)
 tail(Rice)
 #
 plot2 <- ggplot(Rice, aes(Year, Value, group = 1)) +
-         geom_point() +
-         geom_line() +
-         labs(x = "Year", y = "Value", title = "Rice")
+    geom_line(color = "purple") +
+    geom_point(color = "orange", aes(size = Year), alpha = 0.5) +
+    labs(x = "Year", y = "Value", title = "Rice")
 plot2
 # 3 Wheat
 Wheat <- PolinaTable[PolinaTable$Item == "Wheat", ]
