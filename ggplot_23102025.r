@@ -3,34 +3,34 @@ library(ggplot2)
 library(tidyverse)
 library(readr)
 # basic plots
-PolinaTable <- read_csv("FAOSTAT_Rice.csv")
-head(PolinaTable)
+df <- read_csv("FAOSTAT_Rice.csv")
+head(df)
 #
-ggplot(data = PolinaTable, aes(x = Year, y = Value)) +
+ggplot(data = df, aes(x = Year, y = Value)) +
   geom_point() # scatter plot
 #
-ggplot(data = PolinaTable, aes(x = Year, y = Value)) +
+ggplot(data = df, aes(x = Year, y = Value)) +
     geom_line() # lines
 #
-ggplot(data = PolinaTable, aes(x = Year, y = Value)) +
+ggplot(data = df, aes(x = Year, y = Value)) +
     geom_smooth() # smoothed conditional means, show trends in noisy data.
 #
-ggplot(data = PolinaTable, aes(x = Year, y = Value)) +
+ggplot(data = df, aes(x = Year, y = Value)) +
     geom_area() # area charts, cumulative area under a line is filled
 #
-ggplot(data = PolinaTable, aes(x = Year, y = Value)) +
+ggplot(data = df, aes(x = Year, y = Value)) +
     geom_tile() # tiles representing rectangular regions.
 #
-ggplot(data = PolinaTable, aes(x=Year)) +
+ggplot(data = df, aes(x=Year)) +
     geom_density() # moothed density
 #
-PolinaTable <- read_csv("FAOSTAT_India.csv")
-head(PolinaTable)
-tail(PolinaTable)
+df <- read_csv("FAOSTAT_India.csv")
+head(df)
+tail(df)
 
 # select items by attribute in a column
 # 1 Cashew
-Cashew <- PolinaTable[PolinaTable$Item == "Cashew", ]
+Cashew <- df[df$Item == "Cashew", ]
 head(Cashew)
 tail(Cashew)
 ggplot(data = Cashew, aes(x = Year, y = Value)) +
@@ -51,7 +51,7 @@ plot2 <- ggplot(Rice, aes(Year, Value, group = 1)) +
     labs(x = "Year", y = "Value", title = "Rice")
 plot2
 # 3 Wheat
-Wheat <- PolinaTable[PolinaTable$Item == "Wheat", ]
+Wheat <- df[df$Item == "Wheat", ]
 head(Wheat)
 tail(Wheat)
 #
@@ -61,7 +61,7 @@ plot3 <- ggplot(Wheat, aes(Year, Value, group = 1)) +
          labs(x = "Year", y = "Value", title = "Wheat")
 plot3
 # 4 Lemons and limes
-Lemons <- PolinaTable[PolinaTable$Item == "Lemons and limes", ]
+Lemons <- df[df$Item == "Lemons and limes", ]
 head(Lemons)
 tail(Lemons)
 #
@@ -82,14 +82,14 @@ plot4 <- ggplot(Areca, aes(Year, Value, group = 1)) +
 plot4
 #
 # Map variables of one column to color
-df <- read_csv("FAOSTAT_India_10.csv")
+df <- read_csv("FAOSTAT_India_12.csv")
 head(df)
 tail(df)
 ggplot(data=df, aes(x=Year, y=Value, group=Item, colour=Item)) +
     geom_line() +
     geom_point()
 
-df <- read_csv("FAOSTAT_India_10.csv")
+df <- read_csv("FAOSTAT_India_12.csv")
 summary(df)
 head(df)
 tail(df)
@@ -109,7 +109,6 @@ ggplot(df, aes(Year, Value, colour=Item)) +
     geom_point() +
     geom_line() +
     facet_wrap(~Item, scales = "free") +
-    theme(legend.position = "bottom")
+    theme(legend.position = "bottom") +
+    guides(color = guide_legend(nrow = 1))
 # or "top", "left", "right", "none"
-
-),
