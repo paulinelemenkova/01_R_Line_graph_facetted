@@ -108,4 +108,8 @@ ggplot(df, aes(Item, Value, group = Item, fill = Item)) +
 ggplot(df, aes(Year, Value, colour=Item)) +
     geom_point() +
     geom_line() +
-    facet_wrap(~Item, scales = "free")
+    facet_wrap(~Item, scales = "free") +
+    theme(legend.position = "bottom")
+# or "top", "left", "right", "none"
+
+),
