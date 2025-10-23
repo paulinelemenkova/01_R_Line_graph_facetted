@@ -1,0 +1,289 @@
+Item,Year,Value
+Rice,2000,2850.8
+Rice,2001,3115.8
+Rice,2002,2616.3
+Rice,2003,3117.7
+Rice,2004,2975.6
+Rice,2005,3153.7
+Rice,2006,3175.9
+Rice,2007,3292.4
+Rice,2008,3250.9
+Rice,2009,3236.6
+Rice,2010,3358.7
+Rice,2011,3587.8
+Rice,2012,3690.9
+Rice,2013,3624.3
+Rice,2014,3586.8
+Rice,2015,3600.2
+Rice,2016,3740.1
+Rice,2017,3863.7
+Rice,2018,3956.7
+Rice,2019,4083.6
+Rice,2020,4075.7
+Rice,2021,4196.2
+Rice,2022,4257.1
+Rice,2023,4322.3
+Wheat,2000,2778.5
+Wheat,2001,2708.1
+Wheat,2002,2762.1
+Wheat,2003,2610
+Wheat,2004,2713.2
+Wheat,2005,2601.6
+Wheat,2006,2618.8
+Wheat,2007,2707.9
+Wheat,2008,2802.2
+Wheat,2009,2907.1
+Wheat,2010,2839.5
+Wheat,2011,2988.6
+Wheat,2012,3177.5
+Wheat,2013,3153.8
+Wheat,2014,3145.7
+Wheat,2015,2749.6
+Wheat,2016,3033.9
+Wheat,2017,3199.9
+Wheat,2018,3368.2
+Wheat,2019,3533.4
+Wheat,2020,3439.8
+Wheat,2021,3520.8
+Wheat,2022,3537.3
+Wheat,2023,3520.7
+Maize,2000,1821.6
+Maize,2001,1999.6
+Maize,2002,1680.7
+Maize,2003,2040.5
+Maize,2004,1907.3
+Maize,2005,1938.5
+Maize,2006,1912.5
+Maize,2007,2335.2
+Maize,2008,2414
+Maize,2009,2023.8
+Maize,2010,2540.1
+Maize,2011,2478.4
+Maize,2012,2555.7
+Maize,2013,2572.6
+Maize,2014,2572.6
+Maize,2015,2610.7
+Maize,2016,2597.2
+Maize,2017,2688.6
+Maize,2018,3065.3
+Maize,2019,3070.2
+Maize,2020,3006.1
+Maize,2021,3199.3
+Maize,2022,3387.2
+Maize,2023,3544.9
+Cotton,2000,597.9
+Cotton,2001,583.6
+Cotton,2002,597.4
+Cotton,2003,960
+Cotton,2004,993.3
+Cotton,2005,1132.6
+Cotton,2006,1315.1
+Cotton,2007,1461.3
+Cotton,2008,1257.6
+Cotton,2009,1237.7
+Cotton,2010,1594
+Cotton,2011,1574.8
+Cotton,2012,1517.4
+Cotton,2013,1617.9
+Cotton,2014,1413.1
+Cotton,2015,1343.1
+Cotton,2016,1598.2
+Cotton,2017,1401.9
+Cotton,2018,1164.5
+Cotton,2019,1471.2
+Cotton,2020,1315.7
+Cotton,2021,1294.9
+Cotton,2022,1212.5
+Cotton,2023,1268.7
+Cashew,2000,758
+Cashew,2001,642.9
+Cashew,2002,626.7
+Cashew,2003,649.4
+Cashew,2004,685.9
+Cashew,2005,663.4
+Cashew,2006,684.6
+Cashew,2007,726
+Cashew,2008,766.1
+Cashew,2009,778.3
+Cashew,2010,664.1
+Cashew,2011,707.7
+Cashew,2012,740.6
+Cashew,2013,759.1
+Cashew,2014,744.8
+Cashew,2015,723.3
+Cashew,2016,647.7
+Cashew,2017,761.8
+Cashew,2018,769.3
+Cashew,2019,672.4
+Cashew,2020,624.9
+Cashew,2021,636.8
+Cashew,2022,635.1
+Cashew,2023,654.4
+Jute,2000,2025.7
+Jute,2001,2182
+Jute,2002,2144.4
+Jute,2003,2173.1
+Jute,2004,2186.3
+Jute,2005,2362.5
+Jute,2006,2347.7
+Jute,2007,2254.9
+Jute,2008,2207.2
+Jute,2009,2492
+Jute,2010,2343.7
+Jute,2011,2450.5
+Jute,2012,2390
+Jute,2013,2430
+Jute,2014,2655.9
+Jute,2015,2314.6
+Jute,2016,2519.3
+Jute,2017,2659.5
+Jute,2018,2517.5
+Jute,2019,2569.5
+Jute,2020,2706.6
+Jute,2021,2591.5
+Jute,2022,2792.5
+Jute,2023,2613.6
+Tea leaves,2000,7328.6
+Tea leaves,2001,7307.5
+Tea leaves,2002,7280.4
+Tea leaves,2003,7127.9
+Tea leaves,2004,7350
+Tea leaves,2005,7568.1
+Tea leaves,2006,7426.1
+Tea leaves,2007,7460.1
+Tea leaves,2008,7418
+Tea leaves,2009,7304
+Tea leaves,2010,7442.1
+Tea leaves,2011,7938.3
+Tea leaves,2012,8157
+Tea leaves,2013,9319.5
+Tea leaves,2014,8690.4
+Tea leaves,2015,9460.7
+Tea leaves,2016,9415
+Tea leaves,2017,9267.9
+Tea leaves,2018,9357.1
+Tea leaves,2019,9484.9
+Tea leaves,2020,9767.2
+Tea leaves,2021,9951.9
+Tea leaves,2022,10101.1
+Tea leaves,2023,10250.4
+Spices,2000,1734.1
+Spices,2001,1479.5
+Spices,2002,1858.6
+Spices,2003,1506.8
+Spices,2004,1903.3
+Spices,2005,2098.2
+Spices,2006,2042.9
+Spices,2007,1973.2
+Spices,2008,1839.1
+Spices,2009,1903.3
+Spices,2010,2032.7
+Spices,2011,2189
+Spices,2012,2020.3
+Spices,2013,2026.8
+Spices,2014,2211.8
+Spices,2015,1753.1
+Spices,2016,1989.6
+Spices,2017,3026.6
+Spices,2018,1631.6
+Spices,2019,1740.3
+Spices,2020,2013.5
+Spices,2021,2205.9
+Spices,2022,2117
+Spices,2023,2114
+Coffee,2000,946.7
+Coffee,2001,958.8
+Coffee,2002,938.5
+Coffee,2003,858.6
+Coffee,2004,832
+Coffee,2005,826.5
+Coffee,2006,802.7
+Coffee,2007,839.6
+Coffee,2008,760.5
+Coffee,2009,748.4
+Coffee,2010,814.6
+Coffee,2011,837.8
+Coffee,2012,851.7
+Coffee,2013,845.6
+Coffee,2014,798.6
+Coffee,2015,772.6
+Coffee,2016,801
+Coffee,2017,694.3
+Coffee,2018,765.1
+Coffee,2019,766.7
+Coffee,2020,712.6
+Coffee,2021,789.7
+Coffee,2022,774.2
+Coffee,2023,760.2
+Mangoes,2000,7064
+Mangoes,2001,6620.7
+Mangoes,2002,6358.8
+Mangoes,2003,7843.5
+Mangoes,2004,6026.1
+Mangoes,2005,6003.7
+Mangoes,2006,6086
+Mangoes,2007,6376
+Mangoes,2008,6359.4
+Mangoes,2009,5521.9
+Mangoes,2010,6498.6
+Mangoes,2011,6612.1
+Mangoes,2012,6810.8
+Mangoes,2013,7200.8
+Mangoes,2014,7325.7
+Mangoes,2015,8565.4
+Mangoes,2016,8439.6
+Mangoes,2017,9438.5
+Mangoes,2018,9879.7
+Mangoes,2019,9965.4
+Mangoes,2020,9542.9
+Mangoes,2021,9511.6
+Mangoes,2022,9726
+Mangoes,2023,9724.2
+Soya,2000,822.2
+Soya,2001,940
+Soya,2002,762.4
+Soya,2003,1192.9
+Soya,2004,908.2
+Soya,2005,1073.4
+Soya,2006,1062.8
+Soya,2007,1235.1
+Soya,2008,1041.5
+Soya,2009,1023.6
+Soya,2010,1333
+Soya,2011,1199.8
+Soya,2012,1353
+Soya,2013,1012.3
+Soya,2014,935.8
+Soya,2015,734.4
+Soya,2016,1177
+Soya,2017,1176.6
+Soya,2018,1058.5
+Soya,2019,1191.9
+Soya,2020,920.7
+Soya,2021,976.2
+Soya,2022,1069.2
+Soya,2023,1145.3
+Sweet potatoes,2000,9742.1
+Sweet potatoes,2001,8836.8
+Sweet potatoes,2002,8569.4
+Sweet potatoes,2003,8569.4
+Sweet potatoes,2004,8858.8
+Sweet potatoes,2005,8847.7
+Sweet potatoes,2006,8684.9
+Sweet potatoes,2007,8697.6
+Sweet potatoes,2008,8894.3
+Sweet potatoes,2009,9008
+Sweet potatoes,2010,9206.9
+Sweet potatoes,2011,9245.6
+Sweet potatoes,2012,9717.4
+Sweet potatoes,2013,10128.8
+Sweet potatoes,2014,10275.6
+Sweet potatoes,2015,11476.6
+Sweet potatoes,2016,11539.7
+Sweet potatoes,2017,11406.3
+Sweet potatoes,2018,11450.4
+Sweet potatoes,2019,10509.1
+Sweet potatoes,2020,10564.8
+Sweet potatoes,2021,10575.5
+Sweet potatoes,2022,11065.4
+Sweet potatoes,2023,11718.2
