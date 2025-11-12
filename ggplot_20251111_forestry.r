@@ -8,27 +8,8 @@ head(df)
 
 df <- read_csv("Paper_production.csv")
 head(df)
-#
-ggplot(data = df, aes(x = Year, y = Value)) +
-  geom_point() # scatter plot
-#
-ggplot(data = df, aes(x = Year, y = Value)) +
-    geom_line() # lines
-#
-ggplot(data = df, aes(x = Year, y = Value)) +
-    geom_smooth() # smoothed conditional means, show trends in noisy data.
-#
-ggplot(data = df, aes(x = Year, y = Value)) +
-    geom_area() # area charts, cumulative area under a line is filled
-#
-ggplot(data = df, aes(x = Year, y = Value)) +
-    geom_tile() # tiles representing rectangular regions.
-#
-ggplot(data = df, aes(x=Year)) +
-    geom_density() # moothed density
-#
 
-# ------------- EXAMPLE ----------- > select items by attribute in a column
+# ------------- facet_wrap ----------- >
 
 # Boxplots Grouping by 'category' using fill  for box plots and bar plots
 ggplot(df, aes(Item, Value, group = Item, fill = Item)) +
@@ -65,8 +46,6 @@ p<- ggplot(df, aes(Year, Value, colour=Item)) +
     )))
 p
 # Source - https://stackoverflow.com/a/54438496
-# Posted by Z.Lin, modified by community. See post 'Timeline' for change history
-# Retrieved 2025-11-11, License - CC BY-SA 4.0
 ggsave("my_plot.png", plot = p, dpi = 300, width = 10,
     height = 8, units = "in")
 # or "top", "left", "right", "none"
