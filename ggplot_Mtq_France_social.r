@@ -46,21 +46,34 @@ df <- read_csv("Tab_1_Population_1950_2023.csv")
 df <- df[, c("Element", "Year", "Value")]
 #print(df)
 
-df <- df %>%
+df1 <- df %>%
   select(Element, Year, Value) %>%
   filter(Element %in% "Total Population - Both sexes")
+
+df2 <- df %>%
+  select(Element, Year, Value) %>%
+  filter(Element %in% "Total Population - Male")
+
+df3 <- df %>%
+  select(Element, Year, Value) %>%
+  filter(Element %in% "Total Population - Female")
   
-print(df)
+print(df1)
+print(df2)
+print(df3)
 #--------- MY ----------<
 
 
-p1<- ggplot(data = df, aes(x = Year, y = Value, colour=Element)) +
-    geom_point(size = 3, alpha = 0.7, color = "purple") +
+p1<- ggplot() +
+    geom_point(data=df2, aes(x = Year, y = Value, colour = "Element"),
+        size = 3, alpha = 0.7, color = "blue") +
+    geom_point(data=df3, aes(x = Year, y = Value, colour = "Element"),
+        size = 3, alpha = 0.7, color = "red") +
     geom_line() +
     scale_x_continuous(n.breaks = 10) +
     theme(
         legend.position = "bottom",
-        legend.justification = c(1, 0),
+        legend.justification = c(0, 0),
         legend.text = element_text(size = 10),
         legend.title = element_text(size = 12),
         plot.title = element_text(size = 14),
@@ -71,7 +84,80 @@ p1<- ggplot(data = df, aes(x = Year, y = Value, colour=Element)) +
     labs(
         title = "Dynamics in population growth of Martinique for 1950-2023",
         subtitle = "Data: FAO",
-        y = "Persons (1000)",
-        x = "Year",
-        color = "Population growth in Martinique(1950-2023)")
+        y = "Persons",
+        x = "Year")
+p1
+
+p1<- ggplot() +
+    geom_point(data=df, aes(x = Year, y = Value, colour = Element),
+        size = 3, alpha = 0.7, color = "blue") +
+    geom_line() +
+    scale_x_continuous(n.breaks = 10) +
+    theme(
+        legend.position = "bottom",
+        legend.justification = c(0, 0),
+        legend.text = element_text(size = 10),
+        legend.title = element_text(size = 12),
+        plot.title = element_text(size = 14),
+        plot.subtitle = element_text(size = 12),
+        axis.title.x = element_text(size = 12),
+        axis.title.y = element_text(size = 12),
+    ) +
+    labs(
+        title = "Dynamics in population growth of Martinique for 1950-2023",
+        subtitle = "Data: FAO",
+        y = "Persons",
+        x = "Year")
+p1
+#Population growth in Martinique(1950-2023)
+
+# -------------ex ------------>
+library(ggplot2)
+
+# Sample data
+data <- data.frame(
+  category = c("A", "B", "C", "A", "B", "C", "D"),
+  value = c(10, 15, 20, 12, 18, 22, 25)
+)
+
+# Select specific values from 'category' column
+subset_data <- data[data$category %in% c("A", "C"), ]
+
+# Plotting the subset
+ggplot(subset_data, aes(x = category, y = value)) +
+  geom_col()
+# -------------ex ------------<
+
+
+# ------------- MINE ------------>
+df <- read_csv("Tab_1_Population_1950_2023.csv")
+#head(df)
+
+df <- df[, c("Element", "Year", "Value")]
+#print(df)
+
+df <- df[df$Element %in% c("Total Population - Both sexes", "Total Population - Male", "Total Population - Female"), ]
+# ------------- MINE ------------<
+
+# plot
+p1<- ggplot() +
+    geom_point(data=df, aes(x = Year, y = Value, colour = Element),
+        size = 3, alpha = 0.7) +
+    geom_line() +
+    scale_x_continuous(n.breaks = 10) +
+    theme(
+        legend.position = "bottom",
+        legend.justification = c(0, 0),
+        legend.text = element_text(size = 10),
+        legend.title = element_text(size = 12),
+        plot.title = element_text(size = 14),
+        plot.subtitle = element_text(size = 12),
+        axis.title.x = element_text(size = 12),
+        axis.title.y = element_text(size = 12),
+    ) +
+    labs(
+        title = "Dynamics in population growth of Martinique for 1950-2023",
+        subtitle = "Data: FAO",
+        y = "Persons",
+        x = "Year")
 p1
