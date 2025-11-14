@@ -185,11 +185,12 @@ df2 <- df[df$Element %in% "Urban population", ]
 
 p2<- ggplot() +
 geom_point(data=df1, aes(x = Year, y = Value, colour = Value),
-        size = 3, alpha = 0.7)  +
-scale_colour_gradientn(colours = as.vector(parula(100))) +
+        size = 3, alpha = 0.8)  +
 geom_point(data=df2, aes(x = Year, y = Value, colour = Value),
-        size = 3, alpha = 0.7)  +
-scale_colour_gradientn(colours = as.vector(jet(100))) +
+        size = 3, alpha = 0.9)  +
+scale_colour_gradientn(colours = as.vector(turbo(100))) +
+#scale_colour_gradientn(colours = as.vector(jet(100))) +
+#scale_colour_gradientn(colours = as.vector(parula(100))) +
 #geom_point(size = 0.1) +
     geom_line() +
     scale_x_continuous(n.breaks = 10) +
